@@ -1,0 +1,175 @@
+.modal{
+    padding-left: 0;
+    width: 100%;
+}
+
+.modal-content{
+    animation:animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom{
+    from{transform: scale(0.5);}
+    to{transform: scale(1);}
+}
+
+@keyframes animatezoom{
+    from{transform: scale(0.5);}
+    to{transform: scale(1);}
+}
+
+.login-popup{
+    height:550px;
+}
+
+.login-popup .login-header .text-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.login-popup .text-wrapper #login-popup-close{
+    position: absolute;
+    left: 85%;
+    top:6%;
+}
+
+.login-popup .login-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-popup .login-form .grp1,
+.login-popup .login-form .grp2{
+    display: flex;
+    flex-direction: column;
+    padding:0 40px 0 40px;
+    gap:10px;
+    width:100%;
+}
+
+.login-popup .login-form .grp1 #lb1,.login-popup .login-form .grp2 #lb2{
+    color: #181818;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    left:5%;
+}
+
+.login-popup .login-form .grp1 #input1,.login-popup .login-form .grp2 #input2{
+    width:100%;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(196, 196, 196, 0.00);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    text-indent: 5%;
+    font-size: 20px;
+    align-items: center;
+}
+
+.login-popup .login-form .grp1 #input1::placeholder{
+    position: absolute;
+    width: 200px;
+    font-size: 15px;
+    left:3%;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+.login-popup .login-form .grp3{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.login-popup .login-form .grp4{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-popup .login-form .grp4 #link_to_dashboard{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-popup .login-form .grp4 #submit_btn{
+    width:100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #EF6C1B;
+    font-size: 20px;
+    border: none;
+    filter:drop-shadow(0 4px 5px rgba(0,0,0,25%));
+}
+
+.login-popup .login-form .grp3 a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 15px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    padding-right: 45px;
+}
+
+.login-popup .login-footer{
+    width:170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.login-popup .login-footer .text-wrapper{
+    text-align: center;
+    align-items: center;
+}
+
+.login-popup .login-footer #signup_text{
+    background: transparent;
+    border: none;
+    color: #EF6C1B;
+    padding: 0;
+}
+
+.adminlogin {
+    margin-top: 30px;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+.topadminlogin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1300px) {
+    .adminlogin {
+        width: 75%;  
+    }
+}
+@media screen and (max-width:1050px) {
+    .adminlogin {
+        width: 95%;  
+    }
+}
+
+@media screen and (max-width:700px) {
+    .login-popup .login-form form{width: 100%;}
+}

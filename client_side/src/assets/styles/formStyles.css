@@ -1,0 +1,200 @@
+.form-select:focus {
+    box-shadow: none;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+}
+
+.progress-bar {
+    background-color: #7CF288;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.progress,
+.progress-stacked {
+    --bs-progress-bg: none;
+    --bs-progress-border-radius: none;
+}
+
+.shadows {
+    border-radius: 6px;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+    box-shadow: 0px 1px 4px 1px rgba(115, 115, 115, 0.25);
+}
+
+.shadows:focus {
+    box-shadow: 0px 1px 4px 1px rgba(53, 53, 53, 0.25);
+    outline: none;
+}
+
+.backg {
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(188, 178, 246, 0.30);
+    box-shadow: 0px 1px 4px 1px rgba(50, 50, 50, 0.25);
+}
+
+.formdata {
+    width: 80%;
+    padding: 5px;
+}
+
+/* .padding{
+    padding: 5px 10px;
+} */
+.bwidth {
+    width: 80%;
+}
+
+.inwidth {
+    width: 95%;
+    min-height: 40px;
+    text-indent: 5px;
+    margin-bottom: 0px;
+}
+
+.form-modal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 600px;
+    gap: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.form-content {
+    width: 100%;
+    min-height: 620px;
+    max-height: 100%;
+    overflow-y: scroll;
+    /* background: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(0, 72, 202) 100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color :rgb(0, 0, 138);
+    padding: 10px 20px;
+    border-width: 4px 0px 4px 0px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, rgba(0, 0, 211, 0.881) 0%, rgba(23, 104, 255, 0.667) 100%);
+    border-radius: 12px;
+}
+.form-content::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .form-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.577);
+    background-color: rgba(201, 199, 199, 0.521);
+    border-radius: 12px;
+  }
+  .form-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 12px;
+  }
+  
+  .form-content::-webkit-scrollbar-thumb:hover {
+    background: #909093; 
+  }
+
+.formscroll {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.formscroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.formscroll::-webkit-scrollbar-track {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formscroll::-webkit-scrollbar-thumb {
+    background: rgb(182, 185, 193);
+    border-radius: 10px;
+}
+
+.formscroll::-webkit-scrollbar-thumb:hover {
+    background: #909093;
+}
+
+input#file-upload-button {
+    background-color: #7CF288;
+}
+
+@media (max-width: 800px) {
+
+    .formdata,
+    .bwidth {
+        width: 100%;
+    }
+
+    .inwidth {
+        width: 100%;
+    }
+}
+
+.autof:focus {
+    outline: none;
+}
+
+.heightf {
+    height: 65vh;
+    justify-content: center;
+    gap: 55px;
+}
+
+.hdmar {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.datepick{
+    display: flex;
+    flex-wrap:wrap ;
+    text-indent: 0px;
+    justify-content: center;
+    gap: 7px;
+}
+@media screen and (max-width:950px) {
+    .heightf {
+        height: 100%;
+    }
+
+    .form-modal {
+        height: 100%;
+    }
+
+    .form-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        padding: 10px 10px 10px 40px;
+    }
+
+    .formscroll {
+        max-height: 100%;
+    }
+
+    .formscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .fonthide {
+        display: none;
+    }
+}

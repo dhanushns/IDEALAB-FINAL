@@ -1,0 +1,52 @@
+.admintab{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 10px;
+}
+.inadm{
+    width: 95%;
+}
+.inadmin2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.admintab-con{
+    display: flex;
+    width: 40%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.con-head, .con-body{
+    width: 70%;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.111);
+    border: 2px solid #f7f7f7;
+}
+.con-body{
+    width: 25%;
+    background-color: #ef6c1bf3;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 4px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+@media screen and (max-width:1000px){
+    .admintab{
+        width: 100%;
+    }
+    .admintab-con{
+        width: 100%;
+    }
+}

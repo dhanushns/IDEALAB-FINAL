@@ -1,0 +1,163 @@
+.top-nav{   
+    position: relative;
+    border: none;
+    background: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(0, 72, 202) 100%);
+    width: 99%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 12px;
+    z-index:4;
+}
+
+.top-nav .navigations{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 80px;
+}
+
+.top-nav .navigations .left-icons{
+    display: flex;
+    flex-direction: row;
+    gap:0.67rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.top-nav .navigations .right-navigations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.top-nav .navigations .left-icons .logo{
+    width: 50px;
+    height: 50px;
+}
+
+.top-nav .navigations .left-icons .logo_3{
+    width: 50px;
+    height: 70px;
+}
+
+.top-nav .navigations .left-icons .logo #l{
+    width: 50px;
+    height: 50px;
+}
+
+.top-nav .navigations .text-wrapper{
+    color:white;
+}
+
+.top-nav .navigations .text-wrapper a{
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav .icon #top-right-icon{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    display: none;
+    top:40%;
+    left:85%;
+    transition: all 0.5s;
+}
+
+.top-nav .icon #top-right-icon:hover{
+    font-size:30px;
+    transition: all 0.5s;
+}
+
+.hidden-nav{
+    position: fixed;
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 1s ease-out;
+    z-index: 5;
+}
+
+.hidden-nav .navigations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    width:150px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.hidden-nav .navigations .text-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+
+.hidden-nav #close{
+    position: absolute;
+    font-size: 25px;
+    left:90%;
+    top:10%;
+    transition: 1s all ease-in-out;
+}
+
+.hidden-nav #close:hover{
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+.top-nav .navigations .right-navigations .signup .login_btn,
+.top-nav .navigations .right-navigations .signout .logout_btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+}
+
+.hidden-nav .navigations .signup .login_btn,
+.hidden-nav .navigations .signout .logout_btn{
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0;
+}
+
+@media screen and (max-width:700px) {
+    .top-nav .navigations .left-icons{margin-left: 20px;}
+    .top-nav .navigations .right-navigations{display: none;}
+    .top-nav .icon #top-right-icon{display: block;}
+}
+
+@media screen and (max-width:500px) {
+    .top-nav .navigations .left-icons .text-wrapper{
+        width:80px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .top-nav .navigations .left-icons .text-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .top-nav .navigations .left-icons .logo_3{
+        display: none;
+    }
+}
